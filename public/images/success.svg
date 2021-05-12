@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71">
+    <defs>
+        <style>
+            .cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="checkbox" transform="translate(-75.936 -305.936)">
+        <circle id="Ellipse_13" cx="35.5" cy="35.5" r="35.5" fill="#16ce7a" transform="translate(75.936 305.936)"/>
+        <g id="Group_56" transform="translate(96.088 329.773)">
+            <path id="Path_59" d="M101.13 209.7a2.73 2.73 0 0 1 0 3.791l-2.114 2.109a2.73 2.73 0 0 1-3.791 0l-9.259-9.332a2.73 2.73 0 0 1 0-3.791l2.114-2.114a2.73 2.73 0 0 1 3.791 0z" class="cls-2" transform="translate(-85.2 -192.82)"/>
+            <path id="Path_60" d="M181.205 125.966a2.73 2.73 0 0 1 3.791 0l2.114 2.114a2.73 2.73 0 0 1 0 3.791l-16.04 15.967a2.73 2.73 0 0 1-3.791 0l-2.114-2.114a2.73 2.73 0 0 1 0-3.791z" class="cls-2" transform="translate(-157.182 -125.2)"/>
+        </g>
+    </g>
+</svg>

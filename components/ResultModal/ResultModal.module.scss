@@ -1,0 +1,23 @@
+.container {
+    text-align: center;
+
+    img {
+        width: 71px;
+        margin-bottom: 34px;
+    }
+
+    button {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        padding: 19px 16px;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.16);
+        margin-bottom: 21px;
+        background-color: #000;
+        border-radius: 8px;
+        border: none;
+        color: #fff;
+        margin-top: 22px;
+    }
+}

@@ -1,0 +1,27 @@
+.container {
+    position: relative;
+
+    .annotationLayer {
+        display: none;
+    }
+    button {
+        border: none;
+        background: black;
+        border-radius: 35px;
+        height: 35px;
+        vertical-align: middle;
+        margin: 12px;
+        outline: none;
+
+        img {
+            width: 35px;
+        }
+    }
+    .reverse {
+        transform: rotate(180deg);
+    }
+
+    .controls {
+        padding: 12px;
+    }
+}

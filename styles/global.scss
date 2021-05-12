@@ -1,0 +1,48 @@
+@import "./fonts.scss";
+
+html,
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: "Futura", Poppins, "Gill Sans", "Gill Sans MT", sans-serif;
+    font-weight: 400;
+}
+
+button,
+a,
+span,
+table,
+em,
+i,
+b,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Futura", Poppins, "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/** PDF **/
+.annotationLayer {
+    display: none;
+}
+
+.react-pdf__Page__canvas {
+    margin: auto;
+}

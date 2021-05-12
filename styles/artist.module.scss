@@ -1,0 +1,118 @@
+@import "./mixins";
+
+.artist {
+    padding: 30px 0;
+    margin: auto;
+
+    .btnContainer {
+        margin-left: 60px;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        padding: 0 60px;
+
+        .artistAvatar {
+            padding-right: 77px;
+
+            max-height: 548px;
+            max-width: 548px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (max-width: 1400px) {
+            margin: 10px auto;
+            padding: 0;
+            flex-direction: column;
+
+            .artistAvatar {
+                max-width: 100%;
+                max-height: 100%;
+                padding: 0;
+            }
+        }
+
+        .info {
+            width: 100%;
+
+            @media screen and (max-width: 760px) {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 28px;
+                font-weight: 700;
+                margin-top: 30px;
+                margin-bottom: 16px;
+            }
+
+            h2 {
+                margin-top: 25px;
+                margin-bottom: 15px;
+            }
+
+            .socials {
+                & > *:not(:last-of-type) img {
+                    margin-right: 9px;
+                }
+                margin-bottom: 32px;
+            }
+
+            p {
+                margin-bottom: 20px;
+                line-height: 1.5;
+                text-align: left;
+            }
+        }
+    }
+
+    .collections {
+        h3 {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .collectionsContainer {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            grid-row-gap: 38px;
+            grid-column-gap: 43px;
+
+            @media screen and (max-width: 1559px) {
+                margin: auto;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media screen and (max-width: 1189px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media screen and (max-width: 778px) {
+                grid-template-columns: repeat(1, 1fr);
+                margin: auto;
+                text-align: center;
+            }
+            @media only screen and (max-width: 1024px) {
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@include media-mobile-only {
+    .artist {
+        padding: 30px 15px;
+        .btnContainer {
+            margin-left: 0px;
+        }
+    }
+}

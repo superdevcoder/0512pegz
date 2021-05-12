@@ -1,0 +1,39 @@
+.reminder {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 32px 42px;
+    background: #fff;
+    border-radius: 12px;
+
+    text-align: center;
+
+    h3 {
+        margin-bottom: 22px;
+    }
+
+    .button {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        padding: 19px 16px;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.16);
+        margin-bottom: 21px;
+        background-color: #000;
+        border: none;
+        color: #fff;
+        border-radius: 8px;
+    }
+    .skip {
+        font-weight: 500;
+        color: #989898;
+        text-decoration: none;
+        margin-top: 15px;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        background: none;
+    }
+}

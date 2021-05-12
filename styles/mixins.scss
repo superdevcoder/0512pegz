@@ -1,0 +1,23 @@
+@mixin landingContainer {
+    padding: 51px 36px;
+    max-width: 720px;
+    margin: auto;
+}
+
+@mixin media-mobile-only {
+    @media screen and (max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin media-tablet-and-smaller {
+    @media screen and (max-width: 1189px) {
+        @content;
+    }
+}
+
+@mixin media-small-mobile-only {
+    @media screen and (max-width: 778px) {
+        @content;
+    }
+}

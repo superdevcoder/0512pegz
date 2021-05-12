@@ -1,0 +1,63 @@
+.purchase {
+    border-radius: 10px;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    color: #000;
+
+    h3 {
+        opacity: 1;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 32px;
+        margin-bottom: 24px;
+        color: #000;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        color: #929292;
+    }
+
+    input {
+        margin-top: 30px;
+        font-weight: 500;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+        border: 2px solid #000;
+    }
+
+    .buttonContainer {
+        display: flex;
+        align-items: center;
+        span {
+            font-size: 20px;
+            padding: 0 10px;
+            opacity: 0.75;
+            min-width: 80px;
+        }
+
+        button {
+            padding: 10px 80px;
+            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 18px;
+            display: block;
+            background-color: black;
+            color: white;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+    }
+}

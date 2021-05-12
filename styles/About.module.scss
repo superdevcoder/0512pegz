@@ -1,0 +1,42 @@
+.container {
+    margin: auto;
+    margin: auto;
+    padding: 49px 47px;
+
+    background: #fff;
+    margin: 46px 60px;
+
+    display: flex;
+    h2 {
+        margin-bottom: 20px;
+    }
+    .left {
+        flex: 1;
+        align-self: center;
+    }
+    img {
+        max-width: 432px;
+        margin-right: 40px;
+        vertical-align: middle;
+    }
+
+    @media screen and (max-width: 1400px) {
+        margin: 0 18px;
+        padding: 0;
+        flex-direction: column;
+
+        img {
+            margin: auto;
+            max-width: 100%;
+        }
+
+        .right {
+            padding: 18px;
+        }
+    }
+
+    text-align: left;
+    p {
+        font-size: 17px;
+    }
+}

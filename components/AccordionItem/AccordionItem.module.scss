@@ -1,0 +1,36 @@
+.accordionItem {
+    padding-bottom: 26px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #d5d5d5;
+
+    .question {
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        cursor: pointer;
+
+        h3 {
+            font-size: 17px;
+            text-align: left;
+        }
+    }
+    .answer {
+        display: none;
+        margin-top: 25px;
+
+        &.open {
+            display: block;
+        }
+
+        p {
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+    }
+}

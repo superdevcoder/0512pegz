@@ -1,0 +1,25 @@
+.orders {
+    .ordersSection {
+        margin-bottom: 30px;
+    }
+
+    .owner {
+        background: rgb(248, 248, 248);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 21px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,164 @@
+@import "../../styles/partials/underline";
+@import "../../styles/mixins";
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: auto;
+    padding: 10px 60px;
+
+    @media screen and (max-width: 778px) {
+        max-width: 100%;
+        padding: 0 18px;
+    }
+
+    .left {
+        width: 500px;
+        max-width: 100%;
+
+        .social {
+            display: none;
+        }
+
+        .smallLogo {
+            width: 66px;
+            vertical-align: middle;
+        }
+
+        .logo {
+            width: 259.5px;
+            vertical-align: middle;
+        }
+
+        &.bigLogo {
+            .smallLogo {
+                display: none;
+            }
+            .logo {
+                width: 500px;
+            }
+        }
+    }
+
+    .social {
+        a {
+            padding: 9.5px;
+            background: #fff;
+        }
+        a img {
+            width: 25px;
+            opacity: 0.4;
+        }
+
+        & > *:not(:last-of-type) {
+            margin-right: 10px;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 120px;
+        }
+
+        .links {
+            color: black;
+            div {
+                margin-right: 40px;
+            }
+        }
+
+        .links {
+            div {
+                text-align: right;
+            }
+
+            a {
+                display: inline-block;
+                color: black;
+                padding: 2px;
+                font-size: 16px;
+                text-decoration: none;
+                font-weight: medium;
+
+                &:hover {
+                    @include underlineOnHover;
+                }
+            }
+        }
+    }
+}
+
+@include media-mobile-only {
+    .header {
+        padding: 30px 15px;
+
+        flex-direction: column;
+        text-align: center;
+        .left {
+            .smallLogo {
+                width: 44px;
+            }
+            .logo {
+                margin-right: 23.2px;
+                width: 173px;
+            }
+            &.bigLogo {
+                .smallLogo {
+                    display: inline;
+                    width: 44px;
+                    vertical-align: middle;
+                }
+
+                .logo {
+                    display: inline;
+                    width: 173px;
+                    vertical-align: middle;
+                    margin-right: 23.2px;
+                }
+            }
+        }
+    }
+}
+
+@include media-small-mobile-only {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        .left {
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+            .social {
+                display: flex;
+                justify-content: center;
+                height: 41px;
+                align-items: center;
+            }
+        }
+        .right {
+            flex-direction: column;
+            margin-top: 12px;
+
+            .social {
+                display: none;
+            }
+        }
+    }
+    .header .left {
+        flex-direction: column;
+
+        div:first-of-type {
+            margin-bottom: 12px;
+        }
+    }
+}

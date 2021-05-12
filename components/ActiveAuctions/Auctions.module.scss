@@ -1,0 +1,99 @@
+@import "../../styles//mixins.scss";
+
+.auctions {
+    margin: auto;
+    margin: auto;
+    padding: 0 60px;
+
+    @media screen and (max-width: 778px) {
+        max-width: 100%;
+        padding: 0 18px;
+    }
+
+    .title img {
+        max-width: 156px;
+    }
+
+    .headline {
+        display: flex;
+        margin-bottom: 25px;
+        margin-top: 25px;
+
+        .title,
+        .divider,
+        .rightLink {
+            white-space: nowrap;
+            align-self: center;
+
+            a {
+                margin-left: 15px;
+            }
+        }
+        .divider {
+            flex: 12;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            hr {
+                background: #232323;
+                opacity: 0.28;
+            }
+        }
+    }
+
+    .title h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 35px;
+        font-size: 16px;
+        margin: 46px 18px 42px 2px;
+        font-size: 20px;
+    }
+
+    .auctionsContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-row-gap: 38px;
+        grid-column-gap: 43px;
+
+        @media screen and (max-width: 1559px) {
+            margin: auto;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width: 1189px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (max-width: 778px) {
+            grid-template-columns: repeat(1, 1fr);
+            margin: auto;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            background: #fff;
+        }
+    }
+}
+
+@include media-mobile-only {
+    .auctions {
+        padding: 30px 15px;
+        margin: auto;
+        box-sizing: content-box;
+        .title {
+            flex: 1;
+            h2 {
+                text-align: center;
+            }
+        }
+        .divider,
+        .rightLink {
+            display: none;
+        }
+    }
+}

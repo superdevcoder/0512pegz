@@ -1,0 +1,93 @@
+@import "../../styles//mixins.scss";
+.sliderContainer {
+    margin: 0 60px 46px;
+}
+.slider {
+    position: relative;
+
+    height: 282px;
+
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+}
+.sliderContent {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    .left,
+    .right {
+        flex: 1;
+        justify-content: center;
+        padding: 76px 53px 82px;
+        position: relative;
+    }
+
+    .left {
+        h1 {
+            max-width: 600px;
+            font-size: 48px;
+            font-weight: 300;
+        }
+    }
+
+    .right {
+        max-width: 320px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 42px;
+        margin: 16px;
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 74px;
+        }
+        button {
+            background: #fff;
+            color: #000;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 17px;
+            border: none;
+            padding: 11.9px 26px;
+        }
+    }
+}
+
+@include media-mobile-only {
+    .sliderContainer {
+        margin: 0;
+    }
+    .slider {
+        position: relative;
+        margin: 0;
+    }
+    .sliderContent {
+        flex-direction: column;
+        .left {
+            padding: 44px 18px;
+            h1 {
+                font-size: 28px;
+            }
+        }
+        .right {
+            margin: 0 auto 33px;
+            width: calc(100% - 36px);
+            max-width: calc(100% - 36px);
+            padding: 42px 28px;
+            button {
+                width: 228px;
+            }
+        }
+    }
+}

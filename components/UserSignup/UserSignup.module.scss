@@ -1,0 +1,66 @@
+@import "../../styles/mixins";
+
+.signup {
+    display: flex;
+    white-space: nowrap;
+    div,
+    ul {
+        display: flex;
+        margin-left: 40px;
+        li {
+            padding-right: 40px;
+        }
+    }
+    .connectWallet {
+        padding-right: 40px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    h1 {
+        font-weight: 300;
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+    div.hidden {
+        display: none !important;
+    }
+
+    span {
+        display: block;
+    }
+
+    input {
+        background-color: #ffff;
+        font-size: 17px;
+        font-weight: 300;
+        padding: 16px 15px;
+        border-radius: 7px;
+        width: 100%;
+        border: none;
+        font-weight: 500;
+        margin-bottom: 27px;
+
+        &::placeholder {
+            font-weight: 300;
+        }
+    }
+
+    button {
+        display: block;
+        background-color: #000;
+        border-radius: 8px;
+        color: #fff;
+        border: none;
+        font-size: 17px;
+        font-weight: 400;
+        width: 100%;
+        border-radius: 7px;
+        padding: 16px 0;
+        cursor: pointer;
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,66 @@
+@import "./mixins";
+.container {
+    @include landingContainer();
+    text-align: center;
+
+    h2 {
+        margin: 39px auto 32px;
+    }
+
+    input,
+    button {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        padding: 19px 16px;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.16);
+        margin-bottom: 21px;
+    }
+
+    button {
+        background-color: #000;
+        border-radius: 8px;
+        border: none;
+        color: #fff;
+    }
+    .enterButton {
+        background: #6851ff;
+    }
+}
+
+.skip,
+.tiny {
+    font-weight: 500;
+    color: #989898;
+    text-decoration: none;
+    margin-top: 39px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card {
+    padding: 46px 36px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.16);
+    h2 {
+        font-size: 21px;
+        font-weight: bold;
+        margin: 25px auto 14px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 14px auto 43px;
+    }
+
+    .img {
+        width: 150px;
+    }
+}
+
+.success {
+    width: 71px;
+}

@@ -1,0 +1,20 @@
+.faq {
+    max-width: 900px;
+    width: 100%;
+
+    padding: 77px;
+    background: #fff;
+    margin: 0 auto;
+
+    @media screen and (max-width: 760px) {
+        padding: 35px;
+    }
+
+    h1 {
+        font-size: 17px;
+        text-align: left;
+        padding-bottom: 41px;
+        margin-bottom: 25px;
+        border-bottom: solid 1px #d5d5d5;
+    }
+}

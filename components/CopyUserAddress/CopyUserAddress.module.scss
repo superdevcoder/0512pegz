@@ -1,0 +1,22 @@
+.copyUserAddress {
+    display: flex;
+    align-items: center;
+    padding: 9px 24px;
+    margin: 0 auto 45px auto;
+    border-radius: 29px;
+    cursor: pointer;
+    border-radius: 29px;
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.16);
+
+    &.gray {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        background: #fff;
+        padding: 19px;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0 auto;
+    }
+}

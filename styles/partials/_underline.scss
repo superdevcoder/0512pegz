@@ -1,0 +1,14 @@
+@mixin underlineOnHover {
+    position: relative;
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     background-color: black;
+    //     width: 100%;
+    //     height: 2px;
+    //     left: 0;
+    //     bottom: -1px;
+    //     z-index: 99;
+    // }
+}
